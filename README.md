@@ -1,7 +1,6 @@
 # Assignment3
 ![alt text](https://github.com/CPSC-5340/Assignment3/blob/main/Docs/banner_au.png?raw=true)
 
-
 :stop_sign: `Incomplete` <br/>
 :bangbang: `Skeleton Project`
 
