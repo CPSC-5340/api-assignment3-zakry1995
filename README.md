@@ -5,8 +5,6 @@
 :stop_sign: `Incomplete` <br/>
 :bangbang: `Skeleton Project`
 
-# Assignment 3
-
 This is a skeleton project for Assignment 3.
 
 ## Getting Started
