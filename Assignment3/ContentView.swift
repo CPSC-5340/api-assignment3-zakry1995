@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = WeatherViewModel()
+    let cities = ["London", "Tokyo", "New York", "Sydney"]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List(cities, id: \.self) { city in
+                NavigationLink(destination: WeatherDetailView(city: city, viewModel: viewModel)) {
+                    Text(city)
+                }
+            }
+            .navigationBarTitle("Cities")
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
